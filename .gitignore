@@ -32,3 +32,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 contributing.md
 application/config/database.php
+assets/dist/img/peta/*
