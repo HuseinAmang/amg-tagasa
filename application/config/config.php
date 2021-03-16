@@ -85,8 +85,9 @@ $config['url_suffix'] = '';
 | there is an available translation if you intend to use something other
 | than english.
 |
+| $config['language']	= 'english';
 */
-$config['language']	= 'english';
+$config['language']	= 'indonesian';
 
 /*
 |--------------------------------------------------------------------------

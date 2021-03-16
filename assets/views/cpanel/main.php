@@ -23,7 +23,7 @@
 	<!-- End Style -->
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed text-sm accent-navy">
+<body class="hold-transition layout-top-nav text-sm">
 	<div class="wrapper">
 		<!-- Start Header -->
 		<?= $this->load->view('cpanel/header', TRUE) ?>
