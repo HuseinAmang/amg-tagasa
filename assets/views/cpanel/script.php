@@ -20,5 +20,4 @@
 <script src="<?= base_url('assets/plugins/chart.js/Chart.min.js') ?>"></script>
 
 <!-- Extra Script -->
-<script src="<?= base_url('assets/dist/js/main/index.js') ?>"></script>
 <?= $extra_js ?>

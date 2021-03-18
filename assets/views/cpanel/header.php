@@ -15,15 +15,16 @@
 		<div class="collapse navbar-collapse order-3" id="navbarCollapse">
 			<!-- Left navbar links -->
 			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><?= lang('menu-users'); ?></a>
-					<ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-						<li><a href="<?= site_url('users/group'); ?>" class="dropdown-item"><?= lang('menu-add-group'); ?></a></li>
-						<li><a href="<?= site_url('users/add'); ?>" class="dropdown-item"><?= lang('menu-add-user'); ?></a></li>
-						<li><a href="<?= site_url('users'); ?>" class="dropdown-item"><?= lang('menu-all-users'); ?></a></li>
-					</ul>
-				</li>
-
+				<?php if ($group_id == '1') : ?>
+					<li class="nav-item dropdown">
+						<a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><?= lang('menu-users'); ?></a>
+						<ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+							<li><a href="<?= site_url('users/group'); ?>" class="dropdown-item"><?= lang('menu-add-group'); ?></a></li>
+							<li><a href="<?= site_url('users/add'); ?>" class="dropdown-item"><?= lang('menu-add-user'); ?></a></li>
+							<li><a href="<?= site_url('users'); ?>" class="dropdown-item"><?= lang('menu-all-users'); ?></a></li>
+						</ul>
+					</li>
+				<?php endif ?>
 				<li class="nav-item">
 					<a href="index3.html" class="nav-link">About</a>
 				</li>
